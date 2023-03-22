@@ -62,3 +62,17 @@ function getSelectedValueFilter(){
 }
 
 selectedValueFilter.addEventListener("change", getSelectedValueFilter)
+
+const items = ["Amovie","Zmovie"]
+
+items.sort((a,b) => {
+  if (a < b){
+    return 1
+  }
+  if (a > b){
+    return -1
+  }
+  return 0
+})
+
+console.log(items)

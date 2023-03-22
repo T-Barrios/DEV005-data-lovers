@@ -3,8 +3,7 @@ export const ordenar = (dataArray,selectedTitle) => {
     const sortDataByTitleAz = dataArray.sort(function(a,b) {
       if(a.title > b.title){
         return 1;
-      } 
-      if (a.title < b.title){
+      }if (a.title < b.title){
         return -1;
       } 
       return 0;
@@ -15,8 +14,7 @@ export const ordenar = (dataArray,selectedTitle) => {
     const sortDataByTitleZa = dataArray.sort(function(a,b) {
       if(a.title < b.title){
         return 1;
-      } 
-      if (a.title > b.title){
+      }if (a.title > b.title){
         return -1;
       } 
       return 0;

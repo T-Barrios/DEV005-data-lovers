@@ -1,5 +1,5 @@
 body {
-  background-image: url(back_1.png); /*imagen de fondo*/
+  background-image: url(background.png); /*imagen de fondo*/
   background-size: 100%;
 }
 
@@ -11,8 +11,6 @@ body {
   display: grid;
   justify-content: center;
 }
-
-
 
 @media screen and (max-width: 991px) {
 
