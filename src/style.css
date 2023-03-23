@@ -1,25 +1,122 @@
 body {
-  background-image: url(background.png); /*imagen de fondo*/
+  background-image: url(background.png);
   background-size: 100%;
+  text-align: center;
 }
 
-.logoinicio {
-  padding: 5px;
-  margin: auto;
-  width: 650px;
-  height: 300px;
-  display: grid;
+.allElements{
+  background-color: red;
+  width: 78%;
+  display: inline-flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-@media screen and (max-width: 991px) {
-
-  .logoinicio {
-    padding: 5px;
-    margin: auto;
-    width: 450px;
-    height: 200px;
-    display: grid;
-    justify-content: center;
-  }
+header{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
+
+.contenedorLogo{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.contenedor{
+  display: inline-flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contenedorSelect{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.contenedorFunFact{
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.logoinicio{
+  width: 50%;
+}
+
+.contenedorTarjetas{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 50px;
+  column-width: 50%;
+}
+
+.poster{
+  width: 20%;
+  box-shadow: 20px 15px 15px rgb(124, 130, 123);
+  border-radius: 10px;
+}
+
+.sortBy{
+  height: fit-content;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 4px solid darkgray;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.filterBy{
+  height: fit-content;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 4px solid darkgray;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;  
+}
+
+@font-face {
+  font-family: Justice Fest;
+  src: url(https://www.dafont.com/justice-fest.font);
+}
+
+.fun-fact{
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  border: 4px solid darkgray;
+  border-radius: 10px;
+  width: auto;
+  font-size: 23px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  
+}
+
+p[class~="fun-fact"]{
+  background-color: aliceblue;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/*
+@media screen and (max-width: 991px){
+
+}
+*/

@@ -12,8 +12,15 @@
 
 <body>
 
+  <div class="allElements">
   <header>
+    <div class="contenedorLogo">
     <img src="main-logo.png" class="logoinicio">
+    </div>
+
+    <div class="contenedor">
+
+    <div class="contenedorSelect">
     <select class ="sortBy" id="selectionBy">
       <option value="sort" selected>Sort by...</option>
       <option value="title-az">Title From A to Z</option>
@@ -29,14 +36,17 @@
       <option value="Gorō Miyazaki">Gorō Miyazaki</option>
       <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
     </select>  
+    </div>
     
     <div class="contenedorFunFact">
       <button class="fun-fact" id="btnFunFact">Ghibli's Fun Fact<br>Click Me!</button>
-      <p id="procesar"></p>
+      <p class="fun-fact" id="procesar"></p>
+    </div>
     </div>
   </header>
   
-  <div id="animaciones" class="tarjetas"></div>
+  <div id="animaciones" class="contenedorTarjetas"></div>
+  </div>
 
   <script src="main.js" type="module"></script>
 </body>
