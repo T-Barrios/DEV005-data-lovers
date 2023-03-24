@@ -1,6 +1,6 @@
-# Data Lovers
+## Data Lovers
 
-## STUDIO GHIBLI DATA
+# STUDIO GHIBLI DATA
 
 Página web final:[AQUÍ](https://t-barrios.github.io/DEV005-data-lovers/src/)
 
