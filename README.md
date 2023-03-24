@@ -6,7 +6,7 @@ Página web final:[AQUÍ](https://t-barrios.github.io/DEV005-data-lovers/src/)
 
 ## 1. Descripción de la página web
 
-La página web Studio Ghibli Data nace de la necesidad fehaciente de un público amante de la animación de este estudio. Es por esto que Studio Ghibli Data da a conocer los diferentes títulos de las animaciones del estudio Ghibli. Además, entregando herramientas para una mejor búsqueda, tal y como la opción para ordenar las animaciones en orden alfabético, e incluso permitiendo filtrar por un director específico del estudio Ghibli. Por último, ésta página ofrece al usuario la experiencia de conocer un dato curioso sobre los personajes de las animaciones.
+La página web Studio Ghibli Data nace de la necesidad fehaciente de un público amante de la animación de este estudio. Es por esto que Studio Ghibli Data da a conocer los diferentes títulos de las animaciones del estudio Ghibli. Además, entregando herramientas para una mejor búsqueda, tal y como la opción para ordenar las animaciones en orden alfabético, e incluso permitiendo filtrar por un director específico del estudio Ghibli. Por último, esta página ofrece al usuario la experiencia de conocer un dato curioso sobre los personajes de las animaciones.
 
 ## 2. Historias de usuario
 
@@ -14,7 +14,7 @@ Historias de ususario: [AQUÍ](https://trello.com/b/2BOlkEVe)
 
 ## 3. Prototipo de baja fidelidad 
 
-Prototipo de baja fidelidad : [AQUÍ](https://github.com/T-Barrios/DEV005-data-lovers/tree/main/)Prototipo%20baja%20fidelidad
+Prototipo de baja fidelidad : [AQUÍ](https://github.com/T-Barrios/DEV005-data-lovers/tree/main/Prototipo%20baja%20fidelidad)
 
 ## 4. Prototipo de alta fidelidad
 
