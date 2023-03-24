@@ -63,6 +63,7 @@ header{
 }
 
 .sortBy{
+  cursor: pointer;
   height: fit-content;
   font-size: 20px;
   padding: 10px;
@@ -71,9 +72,17 @@ header{
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+
+}
+select, option{
+  text-align: left;
+  width: 100%;
+  font-size: 70%;
+
 }
 
 .filterBy{
+  cursor: pointer;
   height: fit-content;
   font-size: 20px;
   padding: 10px;
@@ -85,6 +94,7 @@ header{
 }
 
 .fun-fact{
+  cursor: pointer;
   height: fit-content;
   padding: 10px;
   text-align: center;
@@ -109,126 +119,13 @@ p[class~="fun-fact"]{
   font-weight: normal;
 }
 
-@media screen and (max-width: 1281px){
+@media screen and (max-width: 1200px){
   body {
     background-image: url(background.png);
     text-align: center;
     background-attachment: fixed;
-    background-size: 98%;
-    width: 100%;
-  }
-  
-  .allElements{
-    width: 80%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  header{
-    display: flex;
-    flex-direction: column;
-    gap: 0%;
-    padding: 0%;
-  }
-  
-  .contenedorLogo{
-    display: inline-flex;
-    justify-content: center;
-  }
-  
-  .contenedor{
-    display: inline-flex;
-    justify-content: space-evenly;
-    gap: 0%;
-    padding: 0%;
-    width: 100%;
-  }
-  
-  .contenedorSelect{
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 0%;
-    width: 100%;
-  }
-  
-  .contenedorFunFact{
-    display: inline-flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .logoinicio{
-    width: 50%;
-  }
-  
-  .contenedorTarjetas{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2em;
-    padding: 5%;
-  }
-  
-  .poster{
-    width: 30%;
-    box-shadow: 20px 15px 15px rgb(124, 130, 123);
-    border-radius: 10px;
-  }
-  
-  .sortBy{
-    text-align: center;
-    border: 5% solid darkgray;
-    border-radius: 1%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    height: fit-content;
-    font-size: 90%;
-    width: 60%;
-  }
-  
-  .filterBy{
-    text-align: center;
-    border: 5% solid darkgray;
-    border-radius: 1%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;  
-    font-size: 90%;
-    width: 60%;
-  }
-  
-  .fun-fact{
-    height: fit-content;
-    text-align: center;
-    border: 5% solid darkgray;
-    border-radius: 1%;
-    font-size: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    width: 100%;
-  }
-  
-  p[class~="fun-fact"]{
-    background-color: aliceblue;
-    display: inline-flex;
-    align-items: center;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-    font-weight: normal;
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 700px){
-  body {
-    background-image: url(background.png);
-    text-align: center;
-    background-attachment: fixed;
-    background-size: 98%;
-    width: 100%;
+    background-size: 100%;
+    width: 98%;
   }
   
   .allElements{
@@ -275,6 +172,126 @@ p[class~="fun-fact"]{
   }
   
   .logoinicio{
+    width: 70%;
+  }
+  
+  .contenedorTarjetas{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 5%;
+  }
+  
+  .poster{
+    width: 40%;
+    box-shadow: 20px 15px 15px rgb(124, 130, 123);
+    border-radius: 10px;
+  }
+  
+  .sortBy{
+    text-align: center;
+    border: 5% solid darkgray;
+    border-radius: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: fit-content;
+    font-size: 100%;
+    width: 40%;
+  }
+  
+  .filterBy{
+    text-align: center;
+    border: 5% solid darkgray;
+    border-radius: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;  
+    font-size: 100%;
+    width: 40%;
+  }
+  select, option{
+    width: 100%;
+    font-size: 80%;
+  }
+  
+  .fun-fact{
+    height: fit-content;
+    text-align: center;
+    border: 5% solid darkgray;
+    border-radius: 1%;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  p[class~="fun-fact"]{
+    background-color: aliceblue;
+    display: inline-flex;
+    align-items: center;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    font-weight: normal;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 700px){
+  body {
+    background-image: url(background.png);
+    text-align: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 98%;
+  }
+  
+  .allElements{
+    width: 80%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    padding: 0%;
+  }
+  
+  .contenedorLogo{
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  .contenedor{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100%;
+    padding: 0%;
+    width: 100%;
+  }
+  
+  .contenedorSelect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  
+  .contenedorFunFact{
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .logoinicio{
     width: 100%;
   }
   
@@ -299,17 +316,21 @@ p[class~="fun-fact"]{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     height: fit-content;
-    font-size: 70%;
+    font-size: 80%;
     width: 40%;
   }
-  
+  select, option{
+    width: 100%;
+    font-size: 50%;
+  }
+
   .filterBy{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;  
-    font-size: 70%;
+    font-size: 80%;
     width: 40%;
   }
   
@@ -318,7 +339,7 @@ p[class~="fun-fact"]{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-size: 70%;
+    font-size: 80%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 100%;
