@@ -2,7 +2,7 @@
 
 # STUDIO GHIBLI DATA
 
-Página web final:[AQUÍ](https://t-barrios.github.io/DEV005-data-lovers/src/)
+Página web final: [AQUÍ](https://t-barrios.github.io/DEV005-data-lovers/src/)
 
 ## 1. Descripción de la página web
 
