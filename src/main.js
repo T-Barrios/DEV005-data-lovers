@@ -2,7 +2,7 @@ import { ordenar, filtrar, procesar} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 const films = data.films
-const container = document.getElementById("animaciones")
+const containerPosters = document.getElementById("animaciones")
 const btn = document.getElementById("btnFunFact");
 const textoFunFact = document.getElementById("procesar")
 const porcentages = procesar(films)
@@ -21,11 +21,26 @@ function displayFunFact(){
   }
 }
 
+const allMovies = []
+const allPosters = []
+const allDirectors = []
+
+
+films.forEach(function(movie) {
+  allMovies.push(movie)
+})
+
+allMovies.forEach(function(poster){
+  allPosters.push(poster)
+})
+
+
+console.log(films)
+/*
 const pintarEnInterfaz = (array) => {
   for (let i = 0; i < array.length; i++) {
     const img = document.createElement("img");
     img.src=array[i].poster
-    img.className="poster"
     container.appendChild(img);
   }
 }
@@ -62,3 +77,5 @@ function getSelectedValueFilter(){
 }
 
 selectedValueFilter.addEventListener("change", getSelectedValueFilter)
+
+*/
