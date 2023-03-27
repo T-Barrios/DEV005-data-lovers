@@ -14,7 +14,7 @@ Historias de ususario: [AQUÍ](https://trello.com/b/2BOlkEVe)
 
 ## 3. Prototipo de baja fidelidad 
 
-Prototipo de baja fidelidad : [AQUÍ](https://github.com/T-Barrios/DEV005-data-lovers/tree/main/Prototipo%20baja%20fidelidad)
+Prototipo de baja fidelidad: [AQUÍ](https://github.com/T-Barrios/DEV005-data-lovers/tree/main/Prototipo%20baja%20fidelidad)
 
 ## 4. Prototipo de alta fidelidad
 
