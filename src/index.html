@@ -13,39 +13,41 @@
 <body>
 
   <div class="allElements">
-  <header>
-    <div class="contenedorLogo">
-    <img src="main-logo.png" class="logoinicio">
-    </div>
+    <header>
+      <div class="contenedorLogo">
+        <img src="main-logo.png" class="logoinicio">
+      </div>
 
-    <div class="contenedor">
+      <div class="contenedor">
 
-    <div class="contenedorSelect">
-    <select class ="sortBy" id="selectionBy">
-      <option value="sort" selected>Sort by...</option>
-      <option value="title-az">Title From A to Z</option>
-      <option value="title-za">Title From Z to A</option>
-    </select>  
+        <button id="btnResetMovie">Show All Movies</button>
 
-    <select class ="filterBy" id="filteringBy">
-      <option value="Filter" selected>Filter by director</option>
-      <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-      <option value="Isao Takahata">Isao Takahata</option>
-      <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-      <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-      <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-      <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-    </select>  
-    </div>
-    
-    <div class="contenedorFunFact">
-      <button class="fun-fact" id="btnFunFact">Ghibli's Fun Fact<br>Click Me!</button>
-      <p class="fun-fact" id="procesar"></p>
-    </div>
-    </div>
-  </header>
-  
-  <div id="animaciones" class="contenedorTarjetas"></div>
+        <nav class="contenedorSelect">
+          <select class="sortBy" id="selectionBy">
+            <option value="sort" selected>Sort by...</option>
+            <option value="title-az">Title From A to Z</option>
+            <option value="title-za">Title From Z to A</option>
+          </select>
+
+          <select class="filterBy" id="filteringBy">
+            <option value="Filter" selected>Filter by director</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          </select>
+        </nav>
+
+        <div class="contenedorFunFact">
+          <button class="fun-fact" id="btnFunFact">Ghibli's Fun Fact<br>Click Me!</button>
+          <p class="fun-fact" id="procesar"></p>
+        </div>
+      </div>
+    </header>
+
+    <main id="animaciones" class="contenedorTarjetas"></main>
   </div>
 
   <script src="main.js" type="module"></script>

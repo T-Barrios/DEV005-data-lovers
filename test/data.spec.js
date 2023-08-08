@@ -89,12 +89,12 @@ describe('ordenar', () => {
     {"title": "Daniel","director": "Director2","release_date": "2002",},
 
   ]
-  const dataSampleSortZa = [
+  /*const dataSampleSortZa = [
     {"title": "Anto","director": "Director2","release_date": "2002",},
     {"title": "Zen","director": "Director1","release_date": "2000",},
     {"title": "Raul","director": "Director1","release_date": "2000",},
     {"title": "Daniel","director": "Director2","release_date": "2002",},
-  ]
+  ]*/
   const dataSampleSortSame = [
     {"title": "Anto","director": "Director2","release_date": "2002",},
     {"title": "Anto","director": "Director2","release_date": "2002",},
@@ -124,7 +124,7 @@ describe('ordenar', () => {
     expect(ordenar(dataSampleSortAz,titleSampleAz)).toEqual(outputAz)
   });
   it('returns an array of the movie titles ordered from z-a', () => {
-    expect(ordenar(dataSampleSortZa,titleSampleZa)).toEqual(outputZa)
+    expect(ordenar(dataSampleSortAz,titleSampleZa)).toEqual(outputZa)
   });
   it('MISMO', () => {
     expect(ordenar(dataSampleSortSame,titleSampleZa)).toEqual(OutputSameZa)

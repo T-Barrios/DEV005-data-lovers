@@ -18,6 +18,18 @@ header{
   padding: 10px;
 }
 
+#btnResetMovie {
+  margin-bottom: 4vh;
+  cursor: pointer;
+  height: fit-content;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  border: 4px solid darkgray;
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .contenedorLogo{
   display: inline-flex;
   justify-content: center;
