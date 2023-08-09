@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Lovers</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <div class="allElements">
+      <header>
+        <div class="contenedorLogo">
+          <img src="main-logo.png" class="logoinicio" />
+        </div>
 
-<body>
+        <div class="contenedor">
+          <button id="btnResetMovie">Show All Movies</button>
 
-  <div class="allElements">
-    <header>
-      <div class="contenedorLogo">
-        <img src="main-logo.png" class="logoinicio">
-      </div>
+          <nav class="contenedorSelect">
+            <select class="sortBy" id="selectionBy">
+              <option value="sort" selected>Sort by...</option>
+              <option value="title-az">Title From A to Z</option>
+              <option value="title-za">Title From Z to A</option>
+            </select>
 
-      <div class="contenedor">
+            <select class="filterBy" id="filteringBy">
+              <option value="Filter" selected>Filter by director</option>
+              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+              <option value="Isao Takahata">Isao Takahata</option>
+              <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+              <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+              <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+              <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            </select>
+          </nav>
 
-        <button id="btnResetMovie">Show All Movies</button>
+          <div class="contenedorFunFact">
+            <button class="fun-fact" id="btnFunFact">
+              Ghibli's Fun Fact<br />Click Me!
+            </button>
+            <p class="fun-fact" id="procesar"></p>
+          </div>
+        </div>
+      </header>
 
-        <nav class="contenedorSelect">
-          <select class="sortBy" id="selectionBy">
-            <option value="sort" selected>Sort by...</option>
-            <option value="title-az">Title From A to Z</option>
-            <option value="title-za">Title From Z to A</option>
-          </select>
-
-          <select class="filterBy" id="filteringBy">
-            <option value="Filter" selected>Filter by director</option>
-            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-            <option value="Isao Takahata">Isao Takahata</option>
-            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-          </select>
-        </nav>
-
-        <div class="contenedorFunFact">
-          <button class="fun-fact" id="btnFunFact">Ghibli's Fun Fact<br>Click Me!</button>
-          <p class="fun-fact" id="procesar"></p>
+      <div id="animaciones" class="contenedorTarjetas"></div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modalText">Some text in the Modal..</p>
         </div>
       </div>
-    </header>
+    </div>
 
-    <main id="animaciones" class="contenedorTarjetas"></main>
-  </div>
-
-  <script src="main.js" type="module"></script>
-</body>
-
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
