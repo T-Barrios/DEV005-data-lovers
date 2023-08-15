@@ -23,7 +23,7 @@ function displayFunFact() {
   }
 }
 
-const modal = document.getElementById("myModal");
+const modalOverlay = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 const modalText = document.getElementById("modalText");
 
@@ -33,27 +33,28 @@ const pintarEnInterfaz = (array) => {
     img.src = array[i].poster;
     img.className = "poster";
     img.addEventListener("click", () => {
-      // alert(`Haz hecho clic en la imagen ${i + 1}`);
-      
-      console.log(`Haz hecho clic en la imagen ${i + 1}`, array[i]);
+      modalText.textContent = array[i].description;
+      // console.log(`Haz hecho clic en la imagen ${i + 1}`, array[i]);
     });
     container.appendChild(img);
 
     // When the user clicks on the button, open the modal
     img.onclick = function () {
-      modalText.textContent = array[i].title;
-      modal.style.display = "block";
+      modalOverlay.style.display = "block";
+      document.body.classList.add("modal-open");
     };
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
-      modal.style.display = "none";
+      modalOverlay.style.display = "none";
+      document.body.classList.remove("modal-open");
     };
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
+      if (event.target === modalOverlay) {
+        modalOverlay.style.display = "none";
+        document.body.classList.remove("modal-open");
       }
     };
   }

@@ -30,8 +30,12 @@ header{
   font-family: 'Courier New', Courier, monospace;
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
 /* The Modal (background) */
-.modal {
+.modal-overlay {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -42,15 +46,34 @@ header{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: hidden;
+  /*overflow: hidden; */
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /*
+  max-width: 80%;
+  max-height: 80%;
+  */
+}
+
+/* Style to make scrollbar always visible in the modal */
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
 }
 
 /* The Close Button */
