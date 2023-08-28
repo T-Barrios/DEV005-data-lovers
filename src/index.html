@@ -39,7 +39,7 @@
 
           <div class="contenedorFunFact">
             <button class="fun-fact" id="btnFunFact">
-              Ghibli's Fun Fact<br />Click Me!
+              Did you know this fact?
             </button>
             <p class="fun-fact" id="procesar"></p>
           </div>
@@ -53,10 +53,24 @@
         <div class="modal">
           <span class="close">&times;</span>
           <div class="modal-content">
-            <p id="modalText">Some text in the Modal..</p>
+            <section class="movieCard">
+              <h1 id="movie-title"></h1>
+            </section>
+            <section class="movieCard">
+              <p id="movie-director" class="alignLeft"></p>
+              <p id="movie-year" class="alignLeft"></p>
+              <p id="movie-rate" class="alignLeft"></p>
+            </section>
+            <section class="movieCard">
+              <p id="movie-description" class="alignLeft"></p>
+            </section>
           </div>
         </div>
       </div>
+      <footer id="footer">
+        <p>“Sometimes What You're Looking For, Comes When You're Not Looking At All”</p>
+        <p>Ocean Waves (1993)</p>
+      </footer>
     </div>
 
     <script src="main.js" type="module"></script>

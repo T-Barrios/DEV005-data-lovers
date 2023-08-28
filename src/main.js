@@ -9,14 +9,14 @@ const porcentages = procesar(films);
 let newFilms = films;
 const btnResetMovie = document.getElementById("btnResetMovie");
 
-textoFunFact.innerHTML = `Did you know that, in studio Ghibli, the number of male characters is slightly higher than female characters?. More precisely, ${porcentages[1]}% are males, while ${porcentages[0]}% are females, and only a ${porcentages[2]}% belongs to characters which their gender is unknown or not explicitly defined.`;
+textoFunFact.innerHTML = `${porcentages[1]}% of the characters are males, ${porcentages[0]}% are females, and only a ${porcentages[2]}% has a gender that is unknown or not explicitly defined.`;
 
 btn.addEventListener("click", displayFunFact);
 textoFunFact.style.display = "none";
 
 function displayFunFact() {
   if (textoFunFact.style.display === "none") {
-    return (textoFunFact.style.display = "block");
+    return textoFunFact.style.display = "block";
   }
   if (textoFunFact.style.display === "block") {
     return (textoFunFact.style.display = "none");
@@ -25,7 +25,19 @@ function displayFunFact() {
 
 const modalOverlay = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
-const modalText = document.getElementById("modalText");
+const movieDescription = document.getElementById("movie-description");
+const movieTtile = document.getElementById("movie-title");
+const movieYear = document.getElementById("movie-year")
+const movieRate = document.getElementById("movie-rate")
+const movieDirector = document.getElementById("movie-director")
+
+/* "title": "My Neighbor Totoro",
+"description": "Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.",
+"director": "Hayao Miyazaki",
+"producer": "Hayao Miyazaki",
+"poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+"release_date": "1988",
+"rt_score" */
 
 const pintarEnInterfaz = (array) => {
   for (let i = 0; i < array.length; i++) {
@@ -33,7 +45,11 @@ const pintarEnInterfaz = (array) => {
     img.src = array[i].poster;
     img.className = "poster";
     img.addEventListener("click", () => {
-      modalText.textContent = array[i].description;
+      movieTtile.textContent = array[i].title;
+      movieDirector.textContent = "Director: " + array[i].director;
+      movieYear.textContent = "Release date: " + array[i].release_date;
+      movieRate.textContent = "Rating score: " + array[i].rt_score;
+      movieDescription.textContent = array[i].description;
       // console.log(`Haz hecho clic en la imagen ${i + 1}`, array[i]);
     });
     container.appendChild(img);

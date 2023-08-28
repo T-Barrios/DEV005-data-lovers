@@ -2,6 +2,18 @@ body {
   background-image: url(background.png);
   background-size: 100%;
   text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.movieCard {
+  padding-left: 1rem;
+  padding-top: 0.6;
+  padding-bottom: 0.6rem;
+  padding-right: 1rem;
 }
 
 .allElements{
@@ -18,16 +30,22 @@ header{
   padding: 10px;
 }
 
+footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
 #btnResetMovie {
   margin-bottom: 4vh;
   cursor: pointer;
   height: fit-content;
-  font-size: 15px;
   padding: 10px;
   text-align: center;
   border: 4px solid darkgray;
   border-radius: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .modal-open {
@@ -46,17 +64,16 @@ header{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  overflow: hidden;
   /*overflow: hidden; */
 }
 
 /* Modal Content/Box */
 .modal {
   background-color: #fefefe;
-  margin: 10% auto; /* 15% from the top and centered */
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
   overflow-y: auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -112,6 +129,7 @@ header{
 
 .contenedorFunFact{
   display: inline-flex;
+  position: relative;
   flex-direction: column;
   width: 40%;
 }
@@ -138,31 +156,25 @@ header{
 .sortBy{
   cursor: pointer;
   height: fit-content;
-  font-size: 20px;
   padding: 10px;
   text-align: center;
   border: 4px solid darkgray;
   border-radius: 10px;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 
 }
 select, option{
   text-align: left;
   width: 100%;
-  font-size: 70%;
-
 }
 
 .filterBy{
   cursor: pointer;
   height: fit-content;
-  font-size: 20px;
   padding: 10px;
   text-align: center;
   border: 4px solid darkgray;
   border-radius: 10px;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;  
 }
 
@@ -174,8 +186,6 @@ select, option{
   border: 4px solid darkgray;
   border-radius: 10px;
   width: auto;
-  font-size: 23px;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   
 }
@@ -186,8 +196,6 @@ p[class~="fun-fact"]{
   align-items: center;
   width: auto;
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
   line-height: 1.5;
   font-weight: normal;
 }
@@ -266,10 +274,8 @@ p[class~="fun-fact"]{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     height: fit-content;
-    font-size: 100%;
     width: 40%;
   }
   
@@ -277,14 +283,11 @@ p[class~="fun-fact"]{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;  
-    font-size: 100%;
     width: 40%;
   }
   select, option{
     width: 100%;
-    font-size: 80%;
   }
   
   .fun-fact{
@@ -292,8 +295,6 @@ p[class~="fun-fact"]{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-size: 100%;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 100%;
   }
@@ -303,8 +304,6 @@ p[class~="fun-fact"]{
     display: inline-flex;
     align-items: center;
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
     line-height: 1.5;
     font-weight: normal;
     width: auto;
@@ -386,24 +385,19 @@ p[class~="fun-fact"]{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     height: fit-content;
-    font-size: 80%;
     width: 40%;
   }
   select, option{
     width: 100%;
-    font-size: 50%;
   }
 
   .filterBy{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;  
-    font-size: 80%;
     width: 40%;
   }
   
@@ -412,8 +406,6 @@ p[class~="fun-fact"]{
     text-align: center;
     border: 5% solid darkgray;
     border-radius: 1%;
-    font-size: 80%;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 100%;
   }
@@ -423,8 +415,6 @@ p[class~="fun-fact"]{
     display: inline-flex;
     align-items: center;
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70%;
     line-height: 1.5;
     font-weight: normal;
     width: auto;
